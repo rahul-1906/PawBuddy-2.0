@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONG Adote Aqui - Página com o acervo de animais disponíveis para adoção.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./homepage.css">
+    <script src="test.js"></script>
+    <!-- <a href="homepage.html">About us</a> -->
+    <title>PawBuddy</title>
+</head>
+
+<body>
+    <header class="container" id="home">
+        <!-- <a href="#home"><img src="./img/logo-header.svg" width="240" height="40" alt="logo"></a> -->
+        <centre>
+            <nav>
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="#pets">Furry Friend</a></li>
+                    <li><a href="./reportabuse.html">Report Abuse</a></li>
+                    <li><a href="./lost.html">Lost Buddies</a></li>
+                    <!-- <li><a href="#contato">Contact</a></li> -->
+                </ul>
+            </nav>
+        </centre>
+    </header>
+
+    <section class="intro-bg">
+        <div class="introduct">
+            <img src="./img/pets/1.png" width="480" height="460" alt="img 1">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Introducing Paw Buddy - your digital hub for pet adoption and rescue! Discover furry friends in
+                        need of homes, connect with shelters, and make a difference today. Together, let's make tails
+                        wag and hearts purr!</p>
+                    <!-- <p><strong>Adote um companheiro(a) e incentive os seus amigos e familiares a fazerem o mesmo.</strong></p> -->
+                    <a href="#pets"><button class="button">View More</button></a>
+                    <!-- <button class="button">Saiba Mais</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="down-bg">
+        <img src="./img/pets/My Ideal Pet Activity Website in Light Blue Orange Beige Illustrative Style (1).png"
+            width="1000" height="800" alt="img 2">
+    </div>
+
+    <section class="container">
+        <section class="lost-dog">
+
+
+            <img src="Lost Dog.jpg" height="250px" width="300px" alt="Lost Dog">
+            <div class="content">
+                <h2>Lost Dog</h2>
+                <p>If you have lost your beloved dog, please provide details and a contact number.</p><br>
+                <button onclick="alert('Thank you for reaching out!')">Report Lost Dog</button>
+            </div>
+        </section>
+        <section class="animal-abuse">
+            <img src="animal abuse.webp" height="250px" width="300px" alt="Animal Abuse">
+            <div class="content">
+                <h2>Animal Abuse Report</h2>
+                <p>If you witness any form of animal abuse, please report it immediately.</p><br>
+                <a href="reportabuse.html"><button>Report Animal Abuse</button></a>
+            </div>
+        </section>
+        <section class="abandoned-cat">
+            <img src="cat.avif" height="250px" width="300px" alt="Abandoned Cat">
+            <div class="content">
+                <h2>Abandoned Cat Found</h2>
+                <p>Found an abandoned cat? Let us know so we can help.</p><br>
+                <button onclick="alert('Thank you for rescuing the cat!')">Report Found Cat</button>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="pets-bg" id="pets">
+        <div class="pets-content">
+            <h1 class="pets-title">Find a Pet.</h1>
+            <input type="radio" name="escolha" value="dog" id="dog" checked="checked">
+            <label for="dog">Dog</label>
+            <input type="radio" name="escolha" value="cat" id="cat">
+            <label for="cat">Cats</label>
+            <div class="dogs-display">
+                <div class="dogs-container">
+                    <div class="dog1">
+                        <img src="./img/pets/Dog 1.jpg" width="230" height="280" alt="img 1">
+                        <h3>Lulu</h3>
+                        <small>Female | 4 Month</small>
+                        <br>
+                        <a href="index.html" target="_blank"><button>Adopt</button></a>
+                    </div>
+                    <div class="dog2">
+                        <img src="./img/pets/dog2.jpg" width="230" height="280" alt="img 2">
+                        <h3>Nanis</h3>
+                        <small>Male | 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog3">
+                        <img src="./img/pets/dog3.jpg" width="230" height="280" alt="img 3">
+                        <h3>Doton</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog4">
+                        <img src="./img/pets/dog4.jpg" width="230" height="280" alt="img 4">
+                        <h3>Lina</h3>
+                        <small>Female| 4 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog5">
+                        <img src="./img/pets/dog5.jpg" width="230" height="280" alt="img 5">
+                        <h3>Pirate</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog6">
+                        <img src="./img/pets/dog6.jpg" width="230" height="280" alt="img 6">
+                        <h3>Frederico</h3>
+                        <small>Male| 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cats-display">
+                <div class="cats-container">
+                    <div class="cat1">
+                        <img src="./img/pets/cat1.jpg" width="230" height="280" alt="img 7">
+                        <h3>Mila</h3>
+                        <small>Female| 11 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat2">
+                        <img src="./img/pets/cat2.jpg" width="230" height="280" alt="img 8">
+                        <h3>Lecter</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat3">
+                        <img src="./img/pets/cat3.jpg" width="230" height="280" alt="img 9">
+                        <h3>Frida</h3>
+                        <small>Female | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat4">
+                        <img src="./img/pets/cat4.jpg" width="230" height="280" alt="img 10">
+                        <h3>Lully</h3>
+                        <small>Female | 5 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat5">
+                        <img src="./img/pets/cat5.jpg" width="230" height="280" alt="img 11">
+                        <h3>Samantha</h3>
+                        <small>Female | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat6">
+                        <img src="./img/pets/cat6.jpg" width="230" height="280" alt="img 12">
+                        <h3>Lua</h3>
+                        <small>Female | 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-link">
+                <a href="#">View More</a>&nbsp;&nbsp;<br>
+                <a href="./lost.html">&nbsp;&nbsp;&nbsp;&nbsp; Report a buddy</a>
+            </div>
+    </section>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyD3vzRH-cJeRDCqNMhYQ6kPOG82KafvZ64",
+            authDomain: "pawbuddy-4c04d.firebaseapp.com",
+            projectId: "pawbuddy-4c04d",
+            storageBucket: "pawbuddy-4c04d.appspot.com",
+            messagingSenderId: "525241261393",
+            appId: "1:525241261393:web:8d82fd7d14880e5dfac770",
+            measurementId: "G-FBBQ1F6YBG"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+html {
+    background: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #f5f7fa 0%, #c8d2e1 90%);
+    border-radius: 20px;
+}
+
+main {
+    height: 35vw;
+    height: 40vw;
+    width: 53vw;
+    position: relative;
+}
+
+main img {
+    transition: all 0.2s ease-in-out;
+    -webkit-filter: blur(0.8px);
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 35vw;
+    height: 40vw;
+    border-radius: 20px;
+    position: absolute;
+}
+
+main img:hover {
+    -webkit-filter: blur(0px);
+    -webkit-filter: brightness(80px);
+
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    filter: blur(50%);
+}
+
+main h2 {
+    color: white;
+    position: absolute;
+    top: 45%;
+    top: 46%;
+    left: 30px;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-shadow: 0 0 60px black;
+    -webkit-filter: blur(0.8px);
+
+}
+
+main h2:hover {
+    -webkit-filter: blur(0px);
+
+}
+
+main p:hover {
+    -webkit-filter: blur(0px);
+
+}
+
+main p {
+    -webkit-filter: blur(0.8px);
+    width: 42rem;
+    width: 50rem;
+    position: absolute;
+    color: aliceblue;
+    top: 75%;
+    top: 72%;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 28px;
+    left: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+main button {
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 10px;
+    font-family: "Salsa", cursive;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #b7f8db 0%, #50a7c2 100%);
+    color: rgb(53, 51, 49);
+    transition: all 0.3s ease-in-out;
+}
+
+main button:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.8);
+    /* rotate: 360deg; */
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #a1ffce 0%, #faffd1 100%);
+    color: #000;
+}
+
+#hero {
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+}
+
+h2 {
+    font-family: "Salsa", cursive;
+}
+
+h3 {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* MAP */
+/* .mapouter {
+    position: relative;
+    text-align: right;
+    height: 437px;
+    width: 619px;
+    height: 200px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 437px;
+    width: 619px;
+    border-radius: 20px;
+    margin-top: 100px;
+
+} */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 299px;
+    width: 401px;
+    border-radius: 10%;
+    justify-content: end;
+    top: 70px;
+    left: 200px;
+    /* right: 02%; */
+    /* background: #000; */
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 299px;
+    width: 401px;
+    background: #e72727;
+    border-radius: 10%;
+}
+
+#heal {
+    margin-left: 20%;
+    margin-top: 70px;
+    font-size: 30px;
+
+}
+
+.cardsm {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+}
+
+.cards {
+    /* height: 170px; */
+    width: 800px;
+    border: 2px solid lightgreen;
+    margin: 3%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cards span {
+    /* align-items: center; */
+    /* font-style: italic; */
+    position: relative;
+    left: 35%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.Card_head {
+    text-align: center;
+    font-weight: 400;
+    font-family: Algerian;
+    /* color: #e72727; */
+}
+
+
+.cards p {
+    color: tomato;
+    font-family: "Salsa";
+    padding: 8px 3px 0 0;
+    text-shadow: 0 0 150px lightgrey;
+
+}
+
+
+/* Cards */
+.code-editor {
+    max-width: 300px;
+    background-color: #1d1e22;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.title {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.57px;
+    color: rgb(212 212 212);
+}
+
+.icon {
+    width: 20px;
+    transition: .2s ease;
+}
+
+.icon:hover {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6e7281;
+}
+
+.editor-content {
+    margin: 0 10px 10px;
+    color: white;
+}
+
+.property {
+    margin-left: 30px;
+}
+
+.property:hover {
+    cursor: text;
+}
+
+.editor-content .color-0 {
+    color: rgb(86 156 214);
+}
+
+.editor-content .color-1 {
+    color: rgb(182 206 168);
+}
+
+.editor-content .color-2 {
+    color: rgb(156 220 254);
+}
+
+.editor-content .color-3 {
+    color: rgb(207 146 120);
+}
+
+.color-preview-1,
+.color-preview-2 {
+    height: 8px;
+    width: 8px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.color-preview-1 {
+    background-color: #1d1e22;
+}
+
+.color-preview-1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardspv {
+    display: flex;
+    margin: 2%;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    justify-content: space-evenly;
+
+
+}
+
+.phvd img {
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding: 20px 20px;
+    border-radius: 50px;
+    /* overflow: hidden; */
+}
+
+#aboutlulu {
+    border: 2px solid lightgreen;
+    border-radius: 15px;
+    margin: 20px 20px;
+    padding: 40px 40px;
+    font-size: 20px;
+    color: #21326c;
+}
+
+.btnadopt {
+    transform: translateX(48vw);
+    text-align: center;
+    background: #ff758c;
+    color: white;
+    border-radius: 8px;
+    border-color: #ff7eb3;
+    text-shadow: 0px 0px 2px #7b7d84;
+    transition: all 0.1s ease-in-out;
+    /* transition: background-color 0.8s ease-in-out; */
+    font-family: salsa, cursive;
+}
+
+.btnadopt:hover {
+    text-shadow: none;
+    transform: all 2s ease-in-out;
+    transform: translateX(48vw) scale(1.1);
+    color: #151313;
+}

@@ -1,0 +1,529 @@
+body,
+ul,
+li,
+h1,
+h3,
+small,
+p,
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffef;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  max-width: 1200px;
+  padding: 2.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4e4d4c;
+}
+
+nav {
+  color: #000000;
+  font-weight: bold;
+}
+
+header a:hover {
+  color:#b357d2;
+}
+/*----------------SLIDER-----------------------*/
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* --------- HOME --------- */
+
+.intro-bg {
+  background-color: #95c1c3;
+  /* padding: 5.625rem; */
+  /* margin-left:15%; */
+  /* width: 100%; */
+}
+
+.down-bg {
+  text-align: center;
+  margin-left: 20%;
+  /* background-color: #ffffef; */
+}
+
+.down-bg img {
+  width: 200%; /* Set the image width to 100% of its container */
+  max-width: 800px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px;
+  
+}
+
+/* Add hover effect */
+.down-bg img:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+  transition: transform 0.3s ease; /* Add smooth transition */
+  
+}
+
+.introduct {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1.875rem;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduc img {
+  height: auto;
+}
+
+.intro-text {
+  color: #000000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* .intro-texto :hover{
+  color: plum;
+} */
+
+.intro-text h1 {
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
+}
+
+.intro-text p {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  max-width: 36ch;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #080606;
+  margin-right: 1.25rem;
+  margin-top: 1.6rem;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/*------------------------------------Img hover------------------------*/
+.dogs-container img:hover,
+.cats-container img:hover {
+    transform: scale(0.9); /* Increase the size of the image on hover */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/*-------------------------abuse-------------------*/
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Ensure equal height for all sections */
+  /* flex-wrap: wrap; Allow wrapping to next line on smaller screens */
+}
+
+section {
+  flex: 1; 
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* max-width: calc(33.33% - 20px); Ensure each section takes up max one-third of the container */
+}
+
+section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 10px;
+}
+
+/* h2 {
+  margin-top: 0;
+} */
+
+button {
+  padding: 10px 20px;
+  background-color: #54ca83;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a7b2c;
+}
+
+
+/* --------- PETS --------- */
+
+.pets-bg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.75rem 2.5rem;
+}
+
+.pets-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  color: #3c3c3c;
+}
+
+.pets-conteudo label {
+  margin-right: 1.25rem;
+}
+
+.dogs-display,
+.cats-display {
+  display: none;
+}
+
+.dogs-container,
+.cats-container {
+  max-width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3.125rem auto;
+  justify-content: space-between;
+  gap: 6.25rem 0;
+}
+
+.pets-conteudo img {
+  border-radius: 10px;
+  transition: transform 500ms ease;
+}
+
+.pets-conteudo img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 0.75rem;
+  color: #3c3c3c;
+}
+
+#dog:checked ~ .dogs-display {
+  display: block;
+}
+
+#cat:checked ~ .cats-display {
+  display: block;
+}
+
+.ver-link {
+  display: flex;
+  justify-content: center;
+}
+
+.ver-link a {
+  color: #707070;
+  position: relative;
+}
+
+.ver-link a::after {
+  content: "▶";
+  font-size: 0.875rem;
+  color: #c74323;
+  position: absolute;
+  right: -1.25rem;
+  top: 1px;
+}
+
+.ver-link a:hover {
+  color: #c74323;
+}
+
+/* --------- CONTATO --------- */
+
+.contato-bg {
+  background-color: #abdcd6;
+  padding: 4.375rem 1.25rem;
+}
+
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.contato-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  color: #c74323;
+  text-align: center;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 860px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 4.375rem;
+  place-items: center;
+}
+
+.formulario {
+  width: 45%;
+}
+
+form label {
+  display: block;
+  margin: 0.75rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #111111;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #c74323;
+  border-radius: 4px;
+  background-color: #fff0e1;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-contato {
+  display: block;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 7px 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #fff0e1;
+  background-color: #c74323;
+  margin-top: 0.625rem;
+}
+
+.btn-contato:hover {
+  background-color: #c25a40;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #3c3c3c;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 0.75rem;
+}
+
+.contato-info a {
+  color: #3c3c3c;
+}
+
+.contato-info a:hover {
+  color: #000000;
+}
+
+.contato-info li:first-child {
+  color: #c74323;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.redesocial img {
+  transition: transform 150ms ease-out;
+}
+
+.redesocial img:hover {
+  transform: scale(1.15);
+}
+
+/* --------- RODAPÉ --------- */
+
+footer {
+  background-color: #c74323;
+  text-align: center;
+  color: #fff0e1;
+  padding: 1.25rem 0;
+  font-weight: 300;
+}
+
+footer img {
+  margin: 0 auto;
+  margin-bottom: 0.625rem;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1000px) {
+  .intro-texto h1 {
+    font-size: 1.875rem;
+  }
+  .button {
+    font-size: 1rem;
+    margin-right: 0.3125rem;
+  }
+  .intro-texto p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    flex-direction: column;
+  }
+  .introducao img {
+    height: 300px;
+  }
+  .contato-info {
+    font-size: 1.125rem;
+  }
+  .contato-info li:first-child {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao img {
+    height: 250px;
+  }
+  .intro-texto h1 {
+    font-size: 1.5rem;
+  }
+  .intro-texto p {
+    font-size: 0.75rem;
+  }
+  .intro-conteudo {
+    display: block;
+  }
+
+  .dogs-container,
+  .cats-container {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .pets-titulo {
+    font-size: 1.75rem;
+  }
+
+  .contato-titulo {
+    font-size: 1.75rem;
+  }
+
+  .contato-conteudo {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao-bg {
+    padding: 3.125rem 1.25rem;
+  }
+  .contato-conteudo {
+    flex-direction: column;
+    place-items: start;
+  }
+  .formulario {
+    width: 100%;
+  }
+  header {
+    justify-content: center;
+  }
+
+  header img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-texto h1 {
+    font-size: 1.25rem;
+  }
+  .button {
+    font-size: 0.75rem;
+  }
+}

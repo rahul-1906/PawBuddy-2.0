@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Salsa&family=Single+Day&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(196, 237, 237);
+        }
+        /* * {
+    box-sizing: border-box;
+  } */
+
+header {
+    max-width: 1200px;
+    padding: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensure equal height for all sections */
+    /* flex-wrap: wrap; Allow wrapping to next line on smaller screens */
+  }
+  a {
+    text-decoration: none;
+    color: #4e4d4c;
+  }
+  nav {
+    color: #000000;
+    font-weight: bold;
+  }
+  header a:hover {
+    color:#b357d2;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+        nav {
+            height: 50px;
+            /* background-color: #d5ffd4; */
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-around;
+            position: sticky;
+            top: 0px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: #4f9120;
+        }
+
+        nav a:hover {
+            color: #07847c;
+            font-size: 18px;
+            text-shadow: 3px 3px 3px white;
+        }
+
+        h1 {
+            font-weight: bolder;
+            margin: 50px 20px;
+            font-family: "Salsa", cursive;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 70px 320px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-radius: 40px;
+            /* background-color: aliceblue; */
+            background-image: radial-gradient(white, aliceblue, aliceblue, rgb(184, 232, 225), rgb(135, 235, 228));
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            background-color: rgb(196, 237, 237);
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        #submit:hover {
+            background-color: aliceblue;
+            /* color: white; */
+            color: #45a049;
+            border: 1px solid black;
+        }
+
+        #media {
+            height: 150px;
+            width: 300px;
+            border: 1px dashed rgb(121, 147, 147);
+            /* display: flex; */
+            text-align: center;
+            border-radius: 12px;
+            padding: 15px 10px;
+            line-height: 35px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgb(6, 129, 129);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" id="home">
+        <!-- <a href="#home"><img src="./img/logo-header.svg" width="240" height="40" alt="logo"></a> -->
+        <centre>
+            <nav>
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="#pets">Furry Friend</a></li>
+                    <li><a href="#pets">Report Abuse</a></li>
+                    <li><a href="#pets">Lost Buddies</a></li>
+                    <!-- <li><a href="#contato">Contact</a></li> -->
+                </ul>
+            </nav>
+        </centre>
+    </header>
+    <!-- <nav>
+        <a href="">Home</a>
+        <a href="">Adoption</a>
+        <a href="">Report abuse</a>
+        <a href="">Lost&Found</a>
+        <a href="">Services</a>
+    </nav> -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h1>List a Pet for Adoption</h1>
+        <label for="animalType">Animal Type:</label>
+        <input type="text" id="animalType" name="animalType" placeholder="Dog,Cat,etc..." required>
+
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" placeholder="German shepher, Siamese,etc..." required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"
+            placeholder="Tell us about the pet. Include information such as age,gender,personality and helath status..."
+            required></textarea>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="20" placeholder="Age" required>
+
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight" placeholder="Weight" required>
+
+        <label for="size">Size:</label>
+        <input type="number" id="size" name="size" min="1" max="100" placeholder="choose one" required>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required>
+
+        <label for="traits">Traits:</label>
+        <select id="traits" name="traits[]" multiple required>
+            <option value="spayed_neutered">Spayed/Neutered</option>
+            <option value="vaccinated">Vaccinated</option>
+            <option value="house_trained">House-Trained</option>
+            <option value="good_with_kids">Good with Kids</option>
+            <option value="good_with_pets">Good with Pets</option>
+        </select>
+
+        <label for="media"><b>Upload Photos or Videos:</b></label>
+        <div id="media">
+            <div>
+                <h3>Add Photos or Videos</h3>
+            </div>
+            <input type="file" name="media[]" multiple accept="image/*,video/*" placeholder="Upload" required>
+        </div>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

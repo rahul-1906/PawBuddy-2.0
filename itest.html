@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Maps Location Selector</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Select Location</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 0, lng: 0 },
+                zoom: 2
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: 0, lng: 0 },
+                map: map,
+                draggable: true
+            });
+
+            google.maps.event.addListener(marker, 'dragend', function (event) {
+                document.getElementById('latitude').value = event.latLng.lat();
+                document.getElementById('longitude').value = event.latLng.lng();
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz0MeOOjakmZLDkyE3xuUXjrgHCv3MmI&callback=initMap"></script>
+
+    <h2>Selected Location</h2>
+    <form>
+        Latitude: <input type="text" id="latitude" ><br>
+        Longitude: <input type="text" id="longitude" >
+    </form>
+</body>
+
+</html>

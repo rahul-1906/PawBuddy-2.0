@@ -1,0 +1,200 @@
+.navbar-brand {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    /* box-sizing: border-box; */
+  }
+
+header {
+    max-width: 1200px;
+    padding: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensure equal height for all sections */
+    /* flex-wrap: wrap; Allow wrapping to next line on smaller screens */
+  }
+  a {
+    text-decoration: none;
+    color: #4e4d4c;
+  }
+  nav {
+    color: #000000;
+    font-weight: bold;
+  }
+  header a:hover {
+    color:#b357d2;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  /* .main-cont{
+    border: 2px solid black;
+    margin: 200px;
+    margin-top: 20px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  } */
+input[placeholder] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input:hover {
+    border-color: black;
+}
+
+.nav-link svg {}
+
+.nav-link svg:hover {
+    height: 30px;
+    /* width: 20px; */
+    fill: rgb(231, 231, 135);
+}
+
+.inputFile {
+
+    display: none;
+}
+.inputFile::after{
+    /* display: block; */
+}
+
+.input label {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 45%;
+    margin-top: 1rem;
+    /* margin-bottom: 2rem; */
+    font-family: Salsa;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
+.input label svg{
+    margin-bottom: 0.7rem;
+}
+
+.textArea{
+    /* height: 20px; */
+    /* width: 100px; */
+    margin-top:20px ;
+    margin-left: 38% ;
+}
+
+.textArea input,textarea{
+    font-family: salsa;
+}
+
+.textArea>input{
+    margin-left: 2%;
+    margin-top: 0.7em;
+}
+
+/* ---------NEW EDITS 03-04-2024------------------------------------------------------------------- */
+/* classes - .main-cont , .cont2, and form tag also added in html file*/
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 237, 237);
+}
+h2 {
+    font-weight: bolder;
+    margin: 50px 20px;
+    margin-left:270px ;
+    font-family: "Salsa", cursive;
+}
+
+form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    /* background-color: aliceblue; */
+    background-image: radial-gradient(rgb(210, 228, 240), rgb(193, 205, 216), rgb(195, 214, 232), rgb(184, 232, 225), rgb(135, 235, 228));
+}
+.cont2{
+    margin-right: 200px;
+    margin-bottom: 170px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    background-color: rgb(196, 237, 237);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 120px;
+}
+
+#submit:hover {
+    background-color: aliceblue;
+    /* color: white; */
+    color: #45a049;
+    border: 1px solid black;
+}
+
+#media {
+    height: 150px;
+    width: 300px;
+    border: 1px dashed rgb(121, 147, 147);
+    /* display: flex; */
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px 10px;
+    line-height: 35px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(6, 129, 129);
+}
