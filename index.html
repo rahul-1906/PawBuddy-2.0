@@ -1,99 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawBuddy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="ONG Adote Aqui - Página com o acervo de animais disponíveis para adoção.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Salsa&family=Single+Day&family=Teko:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./homepage.css">
+    <script src="test.js"></script>
+    <!-- <a href="homepage.html">About us</a> -->
+    <title>PawBuddy</title>
 </head>
 
 <body>
-    <nav>
-        <img src="./img/logopaw-removebg-preview.png" alt="PawBuddy Logo" height="150px">
-        <h2 style="margin-top: 3%;">PawBuddy</h2>
-        <img src="" alt="User Profile">
-    </nav>
-    <div id="hero">
-        <main>
+    <header class="container" id="home">
+        <!-- <a href="#home"><img src="./img/logo-header.svg" width="240" height="40" alt="logo"></a> -->
+        <centre>
+            <nav>
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="#pets">Furry Friend</a></li>
+                    <li><a href="./reportabuse.html">Report Abuse</a></li>
+                    <li><a href="./lost.html">Lost Buddies</a></li>
+                    <!-- <li><a href="#contato">Contact</a></li> -->
+                </ul>
+            </nav>
+        </centre>
+    </header>
 
-            <img src="./img/lulu.jpg" alt="LULU image">
-            <h2>Meet LULU</h2>
-            <p>Lulu is a 3yr old Labrador retriever. She was found abundand & malnourished, but has since been nursed
-                back to
-                health. She's ready for a new home!</p>
-            <button>Adopt Lulu</button>
-        </main>
-        <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="401" height="299" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                    href="https://embedgooglemap.net/124/"></a><br>
+    <section class="intro-bg">
+        <div class="introduct">
+            <img src="./img/pets/1.png" width="480" height="460" alt="img 1">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Introducing Paw Buddy - your digital hub for pet adoption and rescue! Discover furry friends in
+                        need of homes, connect with shelters, and make a difference today. Together, let's make tails
+                        wag and hearts purr!</p>
+                    <!-- <p><strong>Adote um companheiro(a) e incentive os seus amigos e familiares a fazerem o mesmo.</strong></p> -->
+                    <a href="#pets"><button class="button">View More</button></a>
+                    <!-- <button class="button">Saiba Mais</button> -->
+                </div>
             </div>
         </div>
-        <h3 id="Location">Location</h3>
-
-    </div>
-    <div id="her02">
-        <h3 id="heal">Health Status</h3>
-    </div>
-    <div class="cardsm">
-        <div class="cards">
-            <span class="Card_head">Spayed &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="coral" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                </svg></span>
-            <p>Nutered & Spayed </p>
-
-        </div>
-        <div class="cards"><span class="Card_head">Vaccinated &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="coral" class="bi bi-shield-fill-plus" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m-.5 5a.5.5 0 0 1 1 0v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5z" />
-                </svg> </span>
-            <p>Has received all of the necessary vaccines.</p>
-        </div>
-        <div class="cards"><span class="Card_head">Healthy &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="coral" class="bi bi-file-medical-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8.5 4.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5a.5.5 0 1 1 1 0M5.5 9h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
-                </svg></span>
-            <p>In a good physical condition.</p>
-        </div>
-        <div class="cards"><span class="Card_head">Energy Level &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="coral" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                </svg></span>
-            <p>Medium Energy Level</p>
-        </div>
+    </section>
+    <div class="down-bg">
+        <img src="./img/pets/My Ideal Pet Activity Website in Light Blue Orange Beige Illustrative Style (1).png"
+            width="1000" height="800" alt="img 2">
     </div>
 
-    <!-- Photos & Videos -->
-    <div class="hero2">
-        <h3 style="margin-left: 20%; font-size:28px;">Photos & Videos</h3>
-        <div class="cardspv">
-            <div class="phvd"><img src="./img/lulu1.jpg" alt=""></div>
-            <div class="phvd"><img src="./img/lulu2.jpg" alt=""></div>
-            <div class="phvd"><img src="./img/lulu5.jpg" alt=""></div>
-            <div class="phvd"><img src="./img/lulu6.jpg" alt=""></div>
-        </div>
-    </div>
-    <!-- About -->
-    <h3 style="margin-left: 20%; font-size:30px;margin-top: 80px;">About</h3>
-    <h2 id="aboutlulu">Lulu is a three-year old female Labrador Retriever. She was found abandoned and malnourished, but has since been
-        nourished back to health. She is ready for a new home! Lulu is very friendly and loves people. She is good with
-        other dogs, but maybe a bit too playful for some. She is very active and loves to play, so she will need a home
-        where she can get a plenty of exercise.</h2>
-    <button class="btnadopt">Adopt Lulu</button>
+    <section class="container">
+        <section class="lost-dog">
+
+
+            <img src="Lost Dog.jpg" height="250px" width="300px" alt="Lost Dog">
+            <div class="content">
+                <h2>Lost Dog</h2>
+                <p>If you have lost your beloved dog, please provide details and a contact number.</p><br>
+                <button onclick="location.href = './lost.html';">Report Lost Dog</button>
+            </div>
+        </section>
+        <section class="animal-abuse">
+            <img src="animal abuse.webp" height="250px" width="300px" alt="Animal Abuse">
+            <div class="content">
+                <h2>Animal Abuse Report</h2>
+                <p>If you witness any form of animal abuse, please report it immediately.</p><br>
+                <a href="reportabuse.html"><button>Report Animal Abuse</button></a>
+            </div>
+        </section>
+        <section class="abandoned-cat">
+            <img src="cat.avif" height="250px" width="300px" alt="Abandoned Cat">
+            <div class="content">
+                <h2>Abandoned Cat Found</h2>
+                <p>Found an abandoned cat? Let us know so we can help.</p><br>
+                <button onclick="location.href='./lost.html'">Report Found Cat</button>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="pets-bg" id="pets">
+        <div class="pets-content">
+            <h1 class="pets-title">Find a Pet.</h1>
+            <input type="radio" name="escolha" value="dog" id="dog" checked="checked">
+            <label for="dog">Dog</label>
+            <input type="radio" name="escolha" value="cat" id="cat">
+            <label for="cat">Cats</label>
+            <div class="dogs-display">
+                <div class="dogs-container">
+                    <div class="dog1">
+                        <img src="./img/pets/Dog 1.jpg" width="230" height="280" alt="img 1">
+                        <h3>Lulu</h3>
+                        <small>Female | 4 Month</small>
+                        <br>
+                        <a href="lulu.html" target="_blank"><button>Adopt</button></a>
+                    </div>
+                    <div class="dog2">
+                        <img src="./img/pets/dog2.jpg" width="230" height="280" alt="img 2">
+                        <h3>Nanis</h3>
+                        <small>Male | 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog3">
+                        <img src="./img/pets/dog3.jpg" width="230" height="280" alt="img 3">
+                        <h3>Doton</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog4">
+                        <img src="./img/pets/dog4.jpg" width="230" height="280" alt="img 4">
+                        <h3>Lina</h3>
+                        <small>Female| 4 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog5">
+                        <img src="./img/pets/dog5.jpg" width="230" height="280" alt="img 5">
+                        <h3>Pirate</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="dog6">
+                        <img src="./img/pets/dog6.jpg" width="230" height="280" alt="img 6">
+                        <h3>Frederico</h3>
+                        <small>Male| 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cats-display">
+                <div class="cats-container">
+                    <div class="cat1">
+                        <img src="./img/pets/cat1.jpg" width="230" height="280" alt="img 7">
+                        <h3>Mila</h3>
+                        <small>Female| 11 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat2">
+                        <img src="./img/pets/cat2.jpg" width="230" height="280" alt="img 8">
+                        <h3>Lecter</h3>
+                        <small>Male | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat3">
+                        <img src="./img/pets/cat3.jpg" width="230" height="280" alt="img 9">
+                        <h3>Frida</h3>
+                        <small>Female | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat4">
+                        <img src="./img/pets/cat4.jpg" width="230" height="280" alt="img 10">
+                        <h3>Lully</h3>
+                        <small>Female | 5 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat5">
+                        <img src="./img/pets/cat5.jpg" width="230" height="280" alt="img 11">
+                        <h3>Samantha</h3>
+                        <small>Female | 1 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                    <div class="cat6">
+                        <img src="./img/pets/cat6.jpg" width="230" height="280" alt="img 12">
+                        <h3>Lua</h3>
+                        <small>Female | 2 month</small>
+                        <br>
+                        <button>Adopt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-link">
+                <a href="#">View More</a>&nbsp;&nbsp;<br>
+                <a href="./lost.html">&nbsp;&nbsp;&nbsp;&nbsp; Report a lost buddy</a>
+            </div>
+    </section>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyD3vzRH-cJeRDCqNMhYQ6kPOG82KafvZ64",
+            authDomain: "pawbuddy-4c04d.firebaseapp.com",
+            projectId: "pawbuddy-4c04d",
+            storageBucket: "pawbuddy-4c04d.appspot.com",
+            messagingSenderId: "525241261393",
+            appId: "1:525241261393:web:8d82fd7d14880e5dfac770",
+            measurementId: "G-FBBQ1F6YBG"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>

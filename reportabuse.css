@@ -3,9 +3,14 @@
     font-weight: 400;
     font-style: normal;
 }
+
 * {
     /* box-sizing: border-box; */
-  }
+}
+
+#fontRa {
+    font-family: "Merriweather", serif;
+}
 
 header {
     max-width: 1200px;
@@ -15,31 +20,38 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: space-around;
-    align-items: stretch; /* Ensure equal height for all sections */
+    align-items: stretch;
+    /* Ensure equal height for all sections */
     /* flex-wrap: wrap; Allow wrapping to next line on smaller screens */
-  }
-  a {
+}
+
+a {
     text-decoration: none;
     color: #4e4d4c;
-  }
-  nav {
+}
+
+nav {
     color: #000000;
     font-weight: bold;
-  }
-  header a:hover {
-    color:#b357d2;
-  }
-  ul {
+}
+
+header a:hover {
+    color: #b357d2;
+}
+
+ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
-  }
-  /* .main-cont{
+}
+
+/* .main-cont{
     border: 2px solid black;
     margin: 200px;
     margin-top: 20px;
@@ -67,7 +79,8 @@ input:hover {
 
     display: none;
 }
-.inputFile::after{
+
+.inputFile::after {
     /* display: block; */
 }
 
@@ -83,22 +96,24 @@ input:hover {
     border-radius: 7px;
     padding: 20px;
 }
-.input label svg{
+
+.input label svg {
     margin-bottom: 0.7rem;
 }
 
-.textArea{
+.textArea {
     /* height: 20px; */
     /* width: 100px; */
-    margin-top:20px ;
-    margin-left: 38% ;
+    margin-top: 20px;
+    margin-left: 38%;
 }
 
-.textArea input,textarea{
+.textArea input,
+textarea {
     font-family: salsa;
 }
 
-.textArea>input{
+.textArea>input {
     margin-left: 2%;
     margin-top: 0.7em;
 }
@@ -114,17 +129,18 @@ body {
     padding: 0;
     background-color: rgb(196, 237, 237);
 }
+
 h2 {
     font-weight: bolder;
     margin: 50px 20px;
-    margin-left:270px ;
+    margin-left: 270px;
     font-family: "Salsa", cursive;
 }
 
 form {
     max-width: 800px;
     margin: 40px auto;
-    padding: 0px ;
+    padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
     border-radius: 40px;
@@ -134,7 +150,8 @@ form {
     /* background-color: aliceblue; */
     background-image: radial-gradient(rgb(210, 228, 240), rgb(193, 205, 216), rgb(195, 214, 232), rgb(184, 232, 225), rgb(135, 235, 228));
 }
-.cont2{
+
+.cont2 {
     margin-right: 200px;
     margin-bottom: 170px;
 }
@@ -197,4 +214,8 @@ select {
 input::placeholder,
 textarea::placeholder {
     color: rgb(6, 129, 129);
+}
+
+#fontRa {
+    font-family: "Salsa", cursive ;
 }
