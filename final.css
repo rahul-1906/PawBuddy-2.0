@@ -1,0 +1,135 @@
+header {
+    max-width: 1200px;
+    padding: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    /* Ensure equal height for all sections */
+    /* flex-wrap: wrap; Allow wrapping to next line on smaller screens */
+}
+
+a {
+    text-decoration: none;
+    color: #4e4d4c;
+    font-family: salsa;
+}
+
+nav {
+    color: #000000;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #b357d2;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+body {
+    background: linear-gradient(90deg, #b7f8db 0%, #50a7c2 100%);
+    /* background-image: radial-gradient(rgb(210, 228, 240), rgb(193, 205, 216), rgb(195, 214, 232), rgb(184, 232, 225), rgb(135, 235, 228)); */
+}
+
+
+.main {
+    border-radius: 35px;
+    margin: 50px;
+    background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+    background: lightcyan;
+    background: #E1AFD1;
+    background: #FFE6E6;
+    background: #FBF9F1;
+    /* height: 100px;
+    width: 100px; */
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-family: salsa;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    font-weight: 598;
+}
+
+.hero p {
+    padding-top: 20px;
+    margin-left: 35%;
+    text-align: center;
+    width: 28vw;
+    font-family: salsa;
+    font-weight: 200;
+}
+
+.hero label {
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: Merriweather;
+}
+
+.hero input {
+    border-radius: 7px;
+}
+
+.hero h3 {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    font-family: salsa;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* margin-left: 45%; */
+
+}
+
+.button-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #007bff;
+    color: #fff;
+
+}
+
+.button-container>p>svg {
+    margin-bottom: 8px;
+}
+
+.Upload {
+    border-radius: 3px;
+    font-family: salsa;
+}

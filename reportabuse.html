@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Freehand&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Salsa&family=Single+Day&family=Teko:wght@300..700&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Freehand&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Revolution&family=Protest+Riot&family=Salsa&family=Single+Day&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reportabuse.css">
 </head>
 <!-- <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
@@ -71,81 +71,68 @@
         </centre>
     </header>
     <div class="main-cont">
-        <form action="#" method="post" enctype="multipart/form-data">
+
+
+
+
+        <form>
             <div class="cont2">
-                <h2 style="text-align: center; margin-top: 3rem; font-family: Salsa;" id="fontRa">Report Animal Abuse</h2>
+                <h2>Report Animal Abuse</h2>
+                <!-- <label for="fn">First Name</label><br> -->
+
                 <div class="input">
-                    <!-- <label for="imgimput"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
-                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-                            <path
-                                d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z" />
-                        </svg> Upload Photo</label>
-                    <input type="file" id="imgimput" name="imgimput" placeholder="Upload Photo" accept="image/*"
-                        class="inputFile" required multiple><br> -->
-                    <input type="file" name="file" id="files" multiple>
+                    <input type="file" name="file" id="files" multiple><br><br>
+                    <input type="text" name="crime" id="crime" placeholder="Tell Us What You Saw??"><br>
 
-                    <!--                         
-                    <label for="videoimput" name="vid" id="vid"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
-                            <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
-                            <path
-                                d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
-                            <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                        </svg> Upload Video</label>
-                    <input type="file" id="videoimput" name="videoimput" placeholder="Upload Video" accept="video/*"
-                        class="inputFile" required><br> -->
 
-                    <!-- form -->
-                    <div class=" textArea">
-                        <textarea id="w3review" name="w3review" rows="4"
-                            placeholder="                       Tell us what you saw..." cols="50" required></textarea>
-                        <br>
-                        <input type="text" placeholder="Street Address" required name="streetaddress"
-                            id="streetaddress">
-                        <input type="text" placeholder="Country" required name="Country" id="Country"><br>
-                        <input type="text" placeholder="State" required name="state" id="state">
-                        <input type="text" placeholder="City" required name="city" id="city">
-                        <br>
-                        <input id="submit" type="submit" value="Submit" style="margin-left: 20%; margin-top: 3rem;">
-                    </div>
+                    <!-- <label for="ln">Last Name</label><br> -->
+                    <input type="text" name="ln" id="ln" placeholder="Street Address">
+
+                    <input type="text" name="state" id="state" placeholder="State"><br>
+
+                    <input type="text" name="city" id="city" placeholder="City"><br>
+
+                    <button type="submit" id="submit">Submit</button><br>
+                    <button type="submit" id="chat"><a href="./finalabuse.html">Chat With Rescuers</a></button>
                 </div>
             </div>
+        </form>
+
     </div>
-    </form>
+
+
     <script>
-        // function redirectToAnotherPage() {
-        //     window.location.href = "./finalabuse.html";
-        // }
+        // document.getElementById("submit").onclick = function () {
+        //     location.href = "./finalabuse.html";
+        // };
+
+
+
 
         const form = document.querySelector('form');
         form.addEventListener('submit', (e) => {
 
             e.preventDefault();
             // Prevents HTML handling submission
-            // const imgimput = document.getElementById("imgimput");
-            // const video = document.getElementById("videoimput");
-            const street = document.getElementById("streetaddress");
-            const country = document.getElementById("Country");
+            const crime = document.getElementById("crime");
+            const ln = document.getElementById("ln");
             const state = document.getElementById("state");
             const city = document.getElementById("city");
             const files = document.getElementById("files");
 
             const formData = new FormData();
             // Creates empty formData object
-            // formData.append("imgimput", imgimput.value);
-            // formData.append("video", video.value);
-            formData.append("street", street.value);
-            formData.append("country", country.value);
+            formData.append("crime", crime.value);
+            formData.append("ln", ln.value);
             formData.append("state", state.value);
             formData.append("city", city.value);
 
 
+
             // Appends value of text input
             for (let i = 0; i < files.files.length; i++) {
-                formData.append("imgimput", files.files[i]);
+                formData.append("files", files.files[i]);
             }
-
 
             console.log(...formData);
 
@@ -159,6 +146,12 @@
                 .then(res => res.json())
                 .then(data => console.log(data));
         })
+
+        // document.getElementById("submit").onclick = function () {
+        //     location.href = "./finalabuse.html";
+        // };
+
+
 
     </script>
 </body>
